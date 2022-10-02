@@ -459,7 +459,7 @@
           </ul>
         </div>
 
-        <div class="form-subscribe">
+        <form class="form-subscribe">
           <p class="social-description">Підпишіться на розсилку</p>
           <div class="container-subscribe">
             <input type="email" name="email" id="email" placeholder="E-mail" />
@@ -471,59 +471,57 @@
               </svg>
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form>
+        <form class="form">
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="modal-wrap">
-            <div class="wrap-input">
-              <label for="name">Ім'я</label>
-              <div class="form-wrap">
-                <input type="text" name="name" id="name" />
-                <svg class="form-name">
-                  <use href="./img/sprites.svg#icon-name"></use>
-                </svg>
-              </div>
 
-              <label for="tel">Телефон</label>
-              <div class="form-wrap">
-                <input type="tel" name="tel" id="tel" />
-                <svg class="form-telephone">
-                  <use href="./img/sprites.svg#icon-telephone"></use>
-                </svg>
-              </div>
-
-              <label for="email-form">Пошта</label>
-              <div class="form-wrap">
-                <input type="email" name="email" id="email-form" />
-                <svg class="form-email">
-                  <use href="./img/sprites.svg#icon-email"></use>
-                </svg>
-              </div>
-
-              <label for="Comment">Коментар</label>
-              <textarea name="Comment" id="Comment" placeholder="Введіть текст"></textarea>
-            </div>
-
-            <div class="accept">
-              <input type="checkbox" id="accept" name="accept" required class="visually-hidden" />
-
-              <label for="accept">
-                <span class="checkbox">
-                  <svg>
-                    <use href="./img/sprites.svg#icon-tick"></use>
-                  </svg>
-                </span>
-                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
-              >
-            </div>
-
-            <button type="submit" class="button-title button-submit">Відправити</button>
+          <label for="name">Ім'я</label>
+          <div class="form-wrap">
+            <input type="text" name="name" id="name" />
+            <svg class="form-name">
+              <use href="./img/sprites.svg#icon-name"></use>
+            </svg>
           </div>
+
+          <label for="tel">Телефон</label>
+          <div class="form-wrap">
+            <input type="tel" name="tel" id="tel" />
+            <svg class="form-telephone">
+              <use href="./img/sprites.svg#icon-telephone"></use>
+            </svg>
+          </div>
+
+          <label for="email-form">Пошта</label>
+          <div class="form-wrap">
+            <input type="email" name="email" id="email-form" />
+            <svg class="form-email">
+              <use href="./img/sprites.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <label for="Comment">Коментар</label>
+          <textarea name="Comment" id="Comment" placeholder="Введіть текст"></textarea>
+
+          <div class="accept">
+            <input type="checkbox" id="accept" name="accept" required class="visually-hidden" />
+
+            <label for="accept">
+              <span class="checkbox">
+                <svg>
+                  <use href="./img/sprites.svg#icon-tick"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <span class="line-contract"><a href="">Умови договору</a></span>
+            </label>
+          </div>
+
+          <button type="submit" class="button-title button-submit">Відправити</button>
         </form>
         <button class="modal-button" data-modal-close>
           <svg class="icon-modal">
